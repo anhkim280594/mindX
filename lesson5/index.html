@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //bài tập về nhà 1
+        let stringA = prompt("nhập chuỗi A:");
+        let stringB = prompt("nhập chuỗi B:");
+
+        function checkSubstring(a, b) {
+            return a.includes(b);
+        }
+
+        if (checkSubstring(stringA, stringB)) {
+            alert("chuỗi B nằm trong chuỗi A.");
+        } else {
+            alert("chuỗi B không nằm trong chuỗi A.");
+        }
+
+
+
+        //bài tập về nhà 2
+        let stringS = prompt("nhập chuỗi S")
+        let stringSuppercase = stringS.toUpperCase();
+        alert(stringSuppercase);
+
+
+        //bài tập về nhà 3
+
+        var stringG = prompt("nhập chuỗi G:");
+
+        var replacedString = stringG.replace(/a/g, "b");
+
+        alert("Chuỗi sau khi thay đổi: " + replacedString);
+
+
+    </script>
+
+
+
+</body>
+
+</html>
