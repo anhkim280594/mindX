@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //bai tap 1
+
+        // let monthstring = prompt("nhập tháng: ");
+        // month = Number(monthstring);
+        // if (0 < month && month <= 3) {
+        //     console.log("xuân");
+        // }
+        // else if (4 <= month && month <= 6) {
+        //     console.log("hạ");
+        // }
+        // else if (7 <= month && month <= 9) {
+        //     console.log("thu");
+        // }
+        // else if (10 <= month && month <= 12) {
+        //     console.log("đông");
+        // }
+        // else {
+        //     console.log("ERROR")
+        // }
+
+
+
+        // //bai tap 2 
+
+        // let stringA = prompt ("a= :");
+        // let stringB = prompt ("b= :");
+        // let stringC = prompt ("c= :");
+        // let x1;
+        // let x2;
+
+        // let numberA = Number(stringA);
+        // let numberB = Number(stringB);
+        // let numberC = Number(stringC);
+        //     console.log (numberA);
+        //     console.log (numberB);
+        //     console.log (numberC);
+        // const delta = (numberB ** 2) - (4 * numberA * numberC);
+        // if (delta < 0 ) {
+        //     console.log ("phương trình vô nghiệm");
+        // }
+        // else if (delta === 0) {
+        //     x1 = - (numberB / (2 * numberA));
+        //     console.log ("x1 = x2 = ",x1);
+        // }
+        // else {
+        //     x1 = (- numberB + Math.sqrt(delta)) / (2 * numberA);
+        //     x2 = (- numberB - Math.sqrt(delta)) / (2 * numberA);
+        //     console.log ("x1 = ", x1);
+        //     console.log ("x2 = ", x2);
+        // }
+
+        // //bai tap 3
+        // let stringmoney = prompt ("nhập số tiền/km (đơn vị ngàn đồng):");
+        // let stringkm = prompt ("nhập số km :");
+        // let money = Number(stringmoney);
+        // let km = Number(stringkm);
+        // sum = money * km * 1000; 
+        // console.log( "số tiền phải trả là: ", sum , "VND");
+         
+        //bai tap 4
+
+        let a = Number(prompt ("a = "));
+        let b = Number(prompt ("b = "));
+        let even = 0;
+        let odds = 0;
+        if (a < b) {
+            
+            for (let i = a; i <= b; i++) {
+                if (i % 2 === 0) {
+                    even += i
+                }
+                else {
+                    odds += i
+                }
+            }
+            console.log (even,odds);
+        } else {
+            for (let i = b; i <= a; i++) {
+                if (i % 2 === 0) {
+                    even += i
+                }
+                else {
+                    odds += i
+                }
+            }
+            console.log (even,odds);
+        }
+    </script>
+</body>
+
+</html>
