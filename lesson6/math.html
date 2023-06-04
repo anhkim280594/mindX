@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //bai tap 1
+
+
+        // function caculateDelta(a, b, c) {
+        //     const delta = b * b - 4 * a * c;
+        //     return delta;
+        // }
+        // let x1 = 0;
+        // let x2 = 0;
+        // const delta = caculateDelta();
+        // console.log(delta);
+        // function math2rd(a, b, c) {
+        //     if (delta < 0) {
+        //         console.log("phương trình vô nghiệm");
+        //     } else if (delta == 0) {
+        //         x1 = -b / (2 * a);
+        //         x2 = x1;
+        //         console.log("phương trình có nghiệp kép", x1, x2);
+        //     } else {
+        //         x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        //         x2 = (-b - Math.sqrt(delta)) / (2 * a);
+        //         console.log("phường trình 2 nghiệm", x1, x2);
+        //     }
+        // }
+
+
+
+        //bai tap ve nha
+
+
+        let distance = Number(prompt("nhập số km: "));
+        let price = 0;
+        
+        
+        if (0 < distance && distance <= 1) {
+            price = distance * 15000
+            console.log(price);
+        } else if ( distance > 1 && distance <= 5) {
+            price = distance * 13500
+            console.log ( price);
+        }
+        else if (distance > 5 && distance <= 120){
+            price = distance * 11000
+            console.log(price);
+        } else if (distance > 120) {
+            price = (distance - (distance * 10 / 100)) * 11000
+            console.log(price);
+        }
+        else {
+            console.log("số km phải là số dương");
+        }
+    </script>
+</body>
+
+</html>
