@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&display=swap" rel="stylesheet" />
+    <title>Calculator</title>
+    <style>
+       .calculator {
+      width: 200px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .calculator input[type="button"] {
+      width: 40px;
+      height: 40px;
+      margin: 2px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="result">
+        <br>
+        <input type="button" value="1" onclick="inputValue('1')">
+        <input type="button" value="2" onclick="inputValue('2')">
+        <input type="button" value="3" onclick="inputValue('3')">
+        <input type="button" value="+" onclick="inputValue('+')">
+        <br>
+        <input type="button" value="4" onclick="inputValue('4')">
+        <input type="button" value="5" onclick="inputValue('5')">
+        <input type="button" value="6" onclick="inputValue('6')">
+        <input type="button" value="-" onclick="inputValue('-')">
+        <br>
+        <input type="button" value="7" onclick="inputValue('7')">
+        <input type="button" value="8" onclick="inputValue('8')">
+        <input type="button" value="9" onclick="inputValue('9')">
+        <input type="button" value="*" onclick="inputValue('*')">
+        <br>
+        <input type="button" value="0" onclick="inputValue('0')">
+        <input type="button" value="." onclick="inputValue('.')">
+        <input type="button" value="=" onclick="calculate()">
+        <input type="button" value="/" onclick="inputValue('/')">
+        <br>
+        <input type="button" value="C" onclick="clearResult()">
+      </div>
+    <script>
+
+        function inputValue (value){
+          document.getElementById('result').value += value
+        }
+
+        function calculate() {
+      let input = document.getElementById("result");
+      input.value = eval(input.value);
+    }
+    
+    function clearResult() {
+      let input = document.getElementById("result");
+      input.value = "";
+    }
+    </script>
+</body>
+
+</html>
